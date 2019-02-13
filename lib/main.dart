@@ -9,6 +9,7 @@ class MyApp extends StatelessWidget {
       title: 'UC头条',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        primaryColorBrightness: Brightness.dark
       ),
       home: MyHomePage(title: 'UC头条'),
     );
