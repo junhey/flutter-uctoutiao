@@ -20,7 +20,7 @@ class TextCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        padding: const EdgeInsets.only(top: 10.0, left: 14.0, right: 14.0),
+        padding: const EdgeInsets.only(top: 12.0, left: 14.0, right: 14.0),
         child: GestureDetector(
           onTap: () => intentTo(context),
           child: Column(
