@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fluro/fluro.dart';
 import '../views/detail.dart';
-import '../views/index.dart';
+import '../views/list.dart';
 
 class Routes {
   static Router router;
@@ -12,7 +12,7 @@ class Routes {
     router.notFoundHandler = new Handler(
         handlerFunc: (BuildContext context,
             Map<String, List<String>> params) {
-            return new MyHomePage();
+            return new ListPage();
         }
     );
     // 详情页调用
@@ -20,14 +20,14 @@ class Routes {
         handlerFunc: (BuildContext context,
             Map<String, List<String>> params) {
             String id = params['id']?.first;
-            return new Detail(id);
+            return new DetailPage(id);
         }
     ));
     // 首页调用
     router.define(home, handler: new Handler(
         handlerFunc: (BuildContext context,
             Map<String, List<String>> params) {
-            return new MyHomePage();
+            return new ListPage();
         }
     ));
     Routes.router = router;

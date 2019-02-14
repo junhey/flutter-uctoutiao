@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
 
-class Detail extends StatefulWidget {
+class DetailPage extends StatefulWidget {
     final String id;
 
-    Detail(this.id);
+    DetailPage(this.id);
 
     @override
     State<StatefulWidget> createState() {
@@ -13,7 +13,7 @@ class Detail extends StatefulWidget {
     }
 }
 
-class _DetailState extends State<Detail> {
+class _DetailState extends State<DetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
